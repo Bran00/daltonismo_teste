@@ -1,2 +1,2 @@
 # daltonismo_teste
-Teste para daltônicos.
+Teste para diagnosticar daltonismo.
