@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: hsla(263, 13%, 98%, 0.94);
+}
+
+:root {
+  --background: hsl(157, 80%, 50%, 0.36);
+  align-items: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Text';
+  src: url('Comfortaa/Comfortaa-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'h1';
+  src: url('Comfortaa/Comfortaa-Bold.ttf')
+  format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'h2';
+  src: url('Comfortaa/Comfortaa-Medium.ttf')
+  format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-color: black;
+  font-family: 'Text', cursiva;
+  font-size: 1.3rem;
+  text-align: center;
+}
+h1 {
+  font-family: 'h1', cursiva;
+  font-weight: bold;
+}
+h2 {
+  font-family: 'h2', cursiva;
+  font-weight: bold;
+}
+
+img {
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 3rem;
+  align-items: center;
+}
+
+section, footer {
+  text-align: center;
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+nav > a {
+  background-color: hsla(5, 78%, 64%, 1);
+  padding: 2rem;
+  border-radius: 10px 5px;
+  color: white;
+  text-decoration: none;
+}
+nav > a:hover {
+  cursor: pointer;
+  background-color: hsla(80, 13%, 98%, 0.94);
+  border-color: hsla(120, 75%, 30%, 0.76);
+  color: black;
+  transition: 0.2s;
+}
+
+p {
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.cabecalho {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 2px hsla(5, 78%, 34%, 1);
+  margin-bottom: 10px;
+}
+
+#init {
+  align-items: center;
+  padding: 1.8rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.f {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.f p {
+  text-align: center;
+}
+
+.imgquiz {
+  width: 80%;
+  height: 60%;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
